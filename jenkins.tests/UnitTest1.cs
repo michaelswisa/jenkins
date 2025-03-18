@@ -27,7 +27,7 @@ namespace jenkins.tests
         public void Test4()
         {
             Calculator calculator3 = new Calculator();
-            Assert.Equal(1, calculator3.Divide(2, 2));
+            Assert.Equal(1, calculator3.Divide(0, 2));
         }
     }
 }
