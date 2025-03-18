@@ -15,14 +15,14 @@ pipeline {
                     sh 'dotnet build jenkins/jenkins.csproj'
                 }
                 script {
-                    sh 'dotnet build jenkins/jenkins.tests/jenkins.tests.csproj'
+                    sh 'dotnet build jenkins.tests/jenkins.tests.csproj'
                 }
             }
         }
         stage('Test') {
             steps {
                 script {
-                    sh 'dotnet test jenkins/jenkins.tests/jenkins.tests.csproj'
+                    sh 'dotnet test jenkins.tests/jenkins.tests.csproj'
                 }
             }
         }
